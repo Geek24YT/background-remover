@@ -76,14 +76,14 @@ const fileInput = document.getElementById('fileInput');
     }
 
    function downloadFile(){
-    var a = document.createElement('a'); //<a></a>
-        a.href = imageURL;
-        a.download = 'naciasv.png';
-        document.body.appendChild(a);
+    var anchorElement = document.createElement('a'); //<a></a>
+        anchorElement.href = imageURL;
+        anchorElement.download = 'naciasv.png';
+        document.body.appendChild(anchorElement);
 
-        a.click();
+        anchorElement.click();
 
-        document.body.removeChild(a);
+        document.body.removeChild(anchorElement);
    }
 </script>
 
